@@ -1,11 +1,10 @@
 {
-    "title": "Clean Blog",
-    "name": "startbootstrap-clean-blog",
+    "title": "Statistico",
+    "name": "statistico.io",
     "version": "5.0.8",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
-    "description": "Clean Blog is a Medium inspired blog theme for Bootstrap.",
     "keywords": [
         "css",
         "sass",
@@ -14,19 +13,12 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/clean-blog",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-clean-blog/issues",
-        "email": "feedback@startbootstrap.com"
-    },
+    "homepage": "https://statistico.io",
     "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
+    "author": "Joe Sweeny",
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-clean-blog.git"
+        "url": "https://github.com/statistico/statistico.io"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.10.2",
