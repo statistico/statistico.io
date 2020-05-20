@@ -14,78 +14,87 @@
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<!--    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>-->
+<!--    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>-->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/statistico.min.css" rel="stylesheet">
 
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body>
 
-<!-- Navigation -->
-<!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top">
-
-    <div class="container">
-
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top navbar-fixed-top">
         <!-- Navbar brand -->
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#intro">
+            <img src="img/statistico-logoicon-black_s.png" alt="logo">
+        </a>
 
-        <!-- Collapse button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-                aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+                aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="basicExampleNav">
-
-            <!-- Links -->
-            <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About Us</a>
+                    <a class="nav-link" href="#about">
+                        About Us
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
+                    <a class="nav-link" href="#services">
+                        Services
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">
+                        Contact
+                    </a>
                 </li>
             </ul>
-            <!-- Links -->
-
         </div>
-        <!-- Collapsible content -->
-
-    </div>
-
-</nav>
+    </nav>
 <!--/.Navbar-->
 
 <!--Mask-->
 <div id="intro" class="view container-fluid">
-
-    <div class="mask">
-
+    <div class="mask rgba-black-strong">
+        <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+            <div class="row d-flex justify-content-center text-center">
+                <div class="col-md-10">
+                    <img src="img/statistico-logoicon-black_s.png">
+                    <img src="img/statistico-logotype-white_s.png">
+                    <hr class="hr-light">
+                    <h4 class="text-white my-4">
+                        The home of user friendly football statistics
+                    </h4>
+                    <a class="btn btn-outline-light" href="#about">
+                        READ MORE
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-
 </div>
 <!--/.Mask-->
 
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
-    <div class="row">
-        <div class="col-sm-8">
-            <h2>About Company Page</h2><br>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <br><button class="btn btn-default btn-lg">Get in Touch</button>
-        </div>
-        <div class="col-sm-4">
-            <span class="glyphicon glyphicon-signal logo"></span>
+    <div class="row slideanim">
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6 rgba-black-strong about-text">
+            <h1>About Us</h1>
+            <hr class="hr-short">
+            <p>
+                Here is some more text
+            </p>
+            <a href="#" title="To Top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
         </div>
     </div>
-    <a href="#" title="To Top">
-        <i class="fas fa-arrow-up"></i>
-    </a>
 </div>
 
 <div id="services" class="container-fluid text-center bg-grey">
@@ -98,7 +107,7 @@
             <div class="card h-100">
                 <img class="card-img-top" src="/img/graph.png" alt="analysis">
                 <div class="card-body">
-                    <h4 class="card-title">Design</h4>
+                    <h4 class="card-title">Statistics</h4>
                     <p class="card-text">Deliver the best user experience
                         with our carefully designed responsive websites and applications!</p>
                 </div>
@@ -111,7 +120,7 @@
             <div class="card h-100">
                 <img class="card-img-top" src="/img/player.png" alt="player">
                 <div class="card-body">
-                    <h4 class="card-title">Design</h4>
+                    <h4 class="card-title">Fantasy Football </h4>
                     <p class="card-text">Deliver the best user experience
                         with our carefully designed responsive websites and applications!</p>
                 </div>
@@ -124,7 +133,7 @@
             <div class="card h-100">
                 <img class="card-img-top" src="/img/price.png" alt="price">
                 <div class="card-body">
-                    <h4 class="card-title">Design</h4>
+                    <h4 class="card-title">Price Tracker</h4>
                     <p class="card-text">Deliver the best user experience
                         with our carefully designed responsive websites and applications!</p>
                 </div>
@@ -142,7 +151,7 @@
 </div>
 
 <!-- Container (Contact Section) -->
-<div class="container-fluid text-center">
+<div id="contact" class="container-fluid text-center">
     <h2 class="display-5 my-4">Follow us on:</h2>
     <span>
         <a href="https://twitter.com/statisti_co" target="_blank"><i class="fab fa-3x fa-twitter"></i></a>
@@ -155,36 +164,18 @@
 
 
 <footer class="container-fluid text-center">
-    <a href="#myPage" title="To Top">
-        <span class="glyphicon glyphicon-chevron-up"></span>
+    <div class="container">
+        <p class="text-center">Copyright &copy; Statistico 2020</p>
+    </div>
+    <a href="#" title="To Top">
+        <i class="fas fa-arrow-up"></i>
     </a>
-    <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
 </footer>
 
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script>
     $(document).ready(function(){
-        // Add smooth scrolling to all links in navbar + footer link
-        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 900, function(){
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-        });
-
         // Slide in elements on scroll
         $(window).scroll(function() {
             $(".slideanim").each(function(){
@@ -194,6 +185,13 @@
                 if (pos < winTop + 600) {
                     $(this).addClass("slide");
                 }
+            });
+        });
+
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
             });
         });
     })
