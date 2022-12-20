@@ -80,14 +80,6 @@ body {
     padding-bottom: 20px;
 }
 
-#banner-text {
-    padding: 20px 36px;
-    font-size: 20px;
-    color: #22ccde;
-    animation-delay: 5s;
-    animation: fadeIn 8s;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
 }

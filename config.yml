@@ -5,10 +5,6 @@ title: 'Statistico'
 params:
   banner:
     video: '/video/banner-video-2.mp4'
-  label:
-    iconHeight: "35"
-    iconWidth: "35"
-    text: 'Welcome to Statistico'
   logo:
     ball: '/img/statistico-logo-ball.png'
     textBlue: '/img/statistico-logo-text.png'
