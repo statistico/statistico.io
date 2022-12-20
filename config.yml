@@ -1,0 +1,9 @@
+baseURL: 'https://statistico.io/'
+languageCode: 'en-us'
+title: 'Statistico'
+
+params:
+  logo:
+    ball: '/img/statistico-logo-ball.png'
+    textBlue: '/img/statistico-logo-text.png'
+    textWhite: '/img/statistico-logo-text-white.png'
