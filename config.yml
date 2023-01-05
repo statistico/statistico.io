@@ -3,6 +3,8 @@ languageCode: 'en-us'
 title: 'Statistico'
 
 params:
+  banner:
+    video: '/video/banner-video.mp4'
   logo:
     ball: '/img/statistico-logo-ball.png'
     textBlue: '/img/statistico-logo-text.png'

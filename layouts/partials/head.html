@@ -5,6 +5,12 @@
   </title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  {{ $css := resources.Get "css/main.css" | minify | fingerprint "sha512" }}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{ $skeleton := resources.Get "css/skeleton.css" | minify | fingerprint "sha512" }}
+  <link rel="stylesheet" href="{{ $skeleton.RelPermalink }}" integrity="{{ $skeleton.Data.Integrity }}">
+  {{ $normalize := resources.Get "css/normalize.css" | minify | fingerprint "sha512" }}
+  <link rel="stylesheet" href="{{ $normalize.RelPermalink }}" integrity="{{ $normalize.Data.Integrity }}">
+  {{ $main := resources.Get "css/main.css" | minify | fingerprint "sha512" }}
+  <link rel="stylesheet" href="{{ $main.RelPermalink }}" integrity="{{ $main.Data.Integrity }}">
+  {{ $styles := resources.Get "css/styles.css" | minify | fingerprint "sha512" }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
 </head>
