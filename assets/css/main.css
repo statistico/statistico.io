@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap');
 
 /* Remove default padding */
 ul[class],
@@ -28,7 +28,7 @@ dd {
 /* Set core body defaults */
 body {
     background-color: #28282b;
-    font-family: 'Patua One', cursive;
+    font-family: 'Maven Pro', sans-serif;
     color: ghostwhite;
     min-height: 100vh;
     scroll-behavior: smooth;
@@ -45,8 +45,8 @@ body {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-justify-content: center;
-    justify-content: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
     cursor: default;
     height: 100vh;
     min-height: 35em;
@@ -57,6 +57,8 @@ body {
 }
 
 #banner-logo {
+    top: 40px;
+    position: fixed;
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -70,24 +72,95 @@ body {
 }
 
 #banner-logo-ball {
-    height: 60px;
-    width: 60px;
-    padding: 10px 0;
+    height: 50px;
+    width: 50px;
 }
 
 #banner-logo-text {
-    height: 40px;
-    padding-bottom: 20px;
+    height: 30px;
+    padding-top: 10px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
+#banner-button {
+    position: fixed;
+    bottom: 30px;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1216px) {
-
+#banner-video {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.50;
 }
 
-@media screen and (min-width: 1216px) and (min-width: 1408px) {
+/* Larger than mobile */
+@media (min-width: 400px) {
+    #banner-logo {
+        top: 40px;
+    }
 
+    #banner-button {
+        bottom: 40px;
+    }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    #banner-logo {
+        top: 70px;
+    }
+
+    #banner-logo-ball {
+        height: 70px;
+        width: 70px;
+    }
+
+    #banner-logo-text {
+        height: 50px;
+        padding-top: 10px;
+    }
+
+    #banner-button {
+        bottom: 50px;
+    }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    #banner-logo {
+        top: 80px;
+    }
+
+    #banner-logo-ball {
+        height: 70px;
+        width: 70px;
+    }
+
+    #banner-logo-text {
+        height: 50px;
+        padding-top: 10px;
+    }
+
+    #banner-button {
+        bottom: 80px;
+    }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+    #banner-logo {
+        top: 60px;
+    }
+
+    #banner-button {
+        bottom: 60px;
+    }
+
+    #banner-video {
+        position: fixed;
+    }
 }
