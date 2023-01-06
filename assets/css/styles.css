@@ -13,14 +13,6 @@
         height: 50px;
         font-size: 18px;
     }
-
-    button:hover {
-        background-color: #1EAEDB80;
-    }
-
-    button:focus {
-        background-color: transparent;
-    }
 }
 
 /* Larger than desktop */

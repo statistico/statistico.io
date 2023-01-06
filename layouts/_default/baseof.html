@@ -6,4 +6,7 @@
             {{- block "main" . }}{{- end }}
         </main>
     </body>
+    {{- partial "footer.html" . -}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src='{{ "js/main.js" | absURL }}'></script>
 </html>
