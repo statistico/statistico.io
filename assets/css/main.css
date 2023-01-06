@@ -59,7 +59,7 @@ body {
 
 #banner-logo {
     top: 40px;
-    position: fixed;
+    position: absolute;
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -80,10 +80,11 @@ body {
 #banner-logo-text {
     height: 30px;
     padding-top: 10px;
+    opacity: 0.80;
 }
 
 #banner-button {
-    position: fixed;
+    position: absolute;
     bottom: 30px;
 }
 
@@ -93,6 +94,12 @@ body {
     min-width: 100%;
     min-height: 100%;
     opacity: 0.50;
+}
+
+#info {
+    width: 100%;
+    background-color: #a0a6af;
+    height: 100vh;
 }
 
 /* Larger than mobile */
@@ -162,6 +169,6 @@ body {
     }
 
     #banner-video {
-        position: fixed;
+        position: absolute;
     }
 }
