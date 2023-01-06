@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
 
 /* Remove default padding */
 ul[class],
@@ -28,7 +29,7 @@ dd {
 /* Set core body defaults */
 body {
     background-color: #28282b;
-    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     color: ghostwhite;
     min-height: 100vh;
     scroll-behavior: smooth;
