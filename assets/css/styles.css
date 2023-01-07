@@ -8,14 +8,21 @@ i {
 
 h1 {
     font-family: 'Patua One', cursive;
-    color: #234854;
+    color: #28282b;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Patua One', cursive;
+    color: #28282b;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
 h3 {
     font-family: 'Patua One', cursive;
-    color: #234854;
+    color: #28282b;
     padding-bottom: 10px;
     font-size: 24px;
 }
@@ -37,12 +44,20 @@ h3 {
     h1 {
         font-size: 32px;
     }
+
+    h2 {
+        font-size: 26px;
+    }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
     h1 {
         font-size: 36px;
+    }
+
+    h2 {
+        font-size: 26px;
     }
 }
 
@@ -54,6 +69,10 @@ h3 {
 
     i {
         font-size: 72px;
+    }
+
+    h2 {
+        font-size: 28px;
     }
 
     h3 {
