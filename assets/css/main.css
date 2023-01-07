@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
 
 /* Remove default padding */
 ul[class],
@@ -29,12 +28,13 @@ dd {
 /* Set core body defaults */
 body {
     background-color: #28282b;
-    font-family: 'Titillium Web', sans-serif;
-    color: ghostwhite;
+    font-family: 'Maven Pro', sans-serif;
+    color: #ffffff;
     min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    font-size: 16px;
 }
 
 /* Banner */
@@ -80,7 +80,7 @@ body {
 #banner-logo-text {
     height: 30px;
     padding-top: 10px;
-    opacity: 0.80;
+    opacity: 0.90;
 }
 
 #banner-button {
@@ -98,8 +98,25 @@ body {
 
 #info {
     width: 100%;
-    background-color: #a0a6af;
-    height: 100vh;
+    background-color: #ffffff;
+    height: fit-content;
+    text-align: center;
+    padding: 30px 0;
+}
+
+#info h1 {
+    margin-bottom: 10px;
+}
+
+.card {
+    margin: 10px 0;
+    padding: 20px 20px 38px 20px;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    border-radius: 5px;
+    backdrop-filter: blur(14px);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #000000;
+    font-size: 14px;
 }
 
 /* Larger than mobile */
@@ -114,7 +131,13 @@ body {
 }
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+    .card {
+        height: 420px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
 
 /* Larger than tablet */
 @media (min-width: 750px) {
@@ -134,6 +157,16 @@ body {
 
     #banner-button {
         bottom: 50px;
+    }
+
+    .card {
+        height: 400px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #info h1 {
+        margin-bottom: 16px;
     }
 }
 
@@ -156,6 +189,16 @@ body {
     #banner-button {
         bottom: 80px;
     }
+
+    .card {
+        height: 340px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #info h1 {
+        margin-bottom: 18px;
+    }
 }
 
 /* Larger than Desktop HD */
@@ -170,5 +213,21 @@ body {
 
     #banner-video {
         position: absolute;
+    }
+
+    .card {
+        height: 390px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+
+    #info {
+        padding: 50px 0;
+    }
+
+    #info h1 {
+        margin-bottom: 20px;
     }
 }
