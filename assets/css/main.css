@@ -143,11 +143,6 @@ footer {
     padding: 30px 0;
 }
 
-#contact h3 {
-    font-size: 16px;
-    font-family: 'Maven Pro', sans-serif;
-}
-
 .blog-card {
     margin: 10px 0;
     padding-bottom: 20px;
@@ -361,11 +356,6 @@ footer {
 
     #blog h3 {
         color: #ffffff;
-        font-size: 20px;
-        font-family: 'Maven Pro', sans-serif;
-    }
-
-    #contact h3 {
         font-size: 20px;
         font-family: 'Maven Pro', sans-serif;
     }

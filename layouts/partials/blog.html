@@ -9,7 +9,7 @@
     <div class="row">
       {{ range (.Site.GetPage "Section" "blog").Pages.ByDate }}
       <div class="four columns blog-card">
-        <img src="{{ .Params.Image }}" class="blog-card-img">
+        <img src="{{ .Params.Image }}" class="blog-card-img" alt="{{ .Title }}">
         <h2>{{ .Title }}</h2>
         <div class="blog-data">
           <img src="/img/joe.jpg" alt="Joe Sweeny" class="author-img">
@@ -21,8 +21,8 @@
       </div>
       {{ end }}
     </div>
-    <div class="row">
-      <button>See all blog posts</button>
-    </div>
+<!--    <div class="row">-->
+<!--      <button>See all blog posts</button>-->
+<!--    </div>-->
   </div>
 </section>
