@@ -353,6 +353,11 @@ footer {
         margin-top: 20px;
     }
 
+    .contact-card {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
     .info-card {
         height: 390px;
         margin-left: 10px;
