@@ -1,0 +1,21 @@
+#blog-post {
+    text-align: left;
+    min-height: calc(100vh - 50px);
+    border-bottom: 1px solid #555555;
+}
+
+#blog-post h1 {
+    font-size: 30px;
+    color: #1EAEDB;
+}
+
+#blog-post h2 {
+    color: #1EAEDB;
+}
+
+#blog-post-meta {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 14px 0;
+}

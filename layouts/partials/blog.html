@@ -8,17 +8,19 @@
     </div>
     <div class="row">
       {{ range (.Site.GetPage "Section" "blog").Pages.ByDate }}
-      <div class="four columns blog-card">
-        <img src="{{ .Params.Image }}" class="blog-card-img" alt="{{ .Title }}">
-        <h2>{{ .Title }}</h2>
-        <div class="blog-data">
-          <img src="/img/joe.jpg" alt="Joe Sweeny" class="author-img">
-          <div>
-            <p class="author-name">{{ .Params.Author }}</p>
-            <p>{{ .Date.Format "January 2, 2006" }}</p>
+      <a href="{{ .Permalink }}">
+        <div class="four columns blog-card">
+          <img src="{{ .Params.Image }}" class="blog-card-img" alt="{{ .Title }}">
+          <h2>{{ .Title }}</h2>
+          <div class="blog-data">
+            <img src="/img/joe.jpg" alt="Joe Sweeny" class="author-img">
+            <div>
+              <p class="author-name">{{ .Params.Author }}</p>
+              <p>{{ .Date.Format "Jan 2, 2006" }} &#x2022; {{ math.Round (div (countwords .Content) 220.0) }} min read</p>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
       {{ end }}
     </div>
 <!--    <div class="row">-->

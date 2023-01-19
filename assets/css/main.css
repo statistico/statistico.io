@@ -44,6 +44,7 @@ a {
 footer {
     text-align: center;
     padding: 10px;
+    height: 30px;
 }
 
 /* Banner */
@@ -211,6 +212,21 @@ footer {
     background-color: rgba(255, 255, 255, 0.2);
     color: #000000;
     font-size: 14px;
+}
+
+#navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 5px 0;
+    border-bottom: 1px solid #555555;
+    width: 100%;
+}
+
+#navigation i {
+    font-size: 24px;
+    color: #1EAEDB;
+    padding: 10px 15px 10px 0;
 }
 
 /* Larger than mobile */
