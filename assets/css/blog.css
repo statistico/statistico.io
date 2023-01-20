@@ -10,7 +10,8 @@
 }
 
 #blog-post h2 {
-    color: #1EAEDB;
+    color: rgba(196, 194, 194, 0.8);
+    margin-top: 10px;
 }
 
 #blog-post-meta {
@@ -18,4 +19,41 @@
     flex-direction: row;
     justify-content: flex-start;
     padding: 26px 0;
+}
+
+#blog-content {
+    margin-bottom: 20px;
+}
+
+#blog-content img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    #blog-post h1 {
+        font-size: 32px;
+    }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    #blog-post h1 {
+        font-size: 34px;
+    }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+    #blog-post h1 {
+        font-size: 38px;
+    }
 }
