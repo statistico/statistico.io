@@ -5,18 +5,16 @@ orbs:
   hugo: circleci/hugo@1.3.0
 
 jobs:
-#  build-and-test:
-#    executor:
-#      name: hugo/cibuilds
-#    steps:
-#      - checkout
-#      - hugo/build:
-#          html-proofer: true
-#          version: '0.55'
-#      - persist_to_workspace:
-#          root: .
-#          paths:
-#            - public
+  build-and-test:
+    executor:
+      name: cibuilds/hugo:latest
+    steps:
+      - checkout
+      - hugo-build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - public
 
 #  deploy:
 #    executor: aws-cli/default
