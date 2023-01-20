@@ -6,8 +6,8 @@ orbs:
 
 jobs:
   build-and-test:
-    executor:
-      name: cibuilds/hugo:latest
+#    executor:
+#      name: cibuilds/hugo:latest
     steps:
       - checkout
       - hugo-build
