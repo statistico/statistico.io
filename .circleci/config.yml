@@ -9,7 +9,7 @@ jobs:
     executor: hugo/default
     steps:
       - checkout
-      - hugo-build
+      - hugo/hugo-build
       - persist_to_workspace:
           root: .
           paths:
