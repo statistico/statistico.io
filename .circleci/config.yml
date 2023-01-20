@@ -10,9 +10,8 @@ jobs:
       name: cibuilds/hugo
     steps:
       - checkout
-      - hugo/build:
+      - hugo-build:
           html-proofer: true
-          source: public/
           version: '0.55'
       - persist_to_workspace:
           root: .
