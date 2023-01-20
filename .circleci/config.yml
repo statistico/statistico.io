@@ -10,7 +10,7 @@ jobs:
       name: hugo/default
     steps:
       - checkout
-      - hugo-build
+      - hugo/build
       - persist_to_workspace:
           root: .
           paths:
