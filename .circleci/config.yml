@@ -7,16 +7,16 @@ orbs:
 jobs:
   build-and-test:
     executor:
-      name: cibuilds/hugo
+      name: hugo/cibuilds
     steps:
       - checkout
-      - hugo-build:
+      - hugo/build:
           html-proofer: true
           version: '0.55'
       - persist_to_workspace:
           root: .
           paths:
-            - public/*
+            - public
 
 #  deploy:
 #    executor: aws-cli/default
