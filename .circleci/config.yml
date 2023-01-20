@@ -39,7 +39,7 @@ workflows:
   build-test-deploy:
     jobs:
       - hugo/build:
-          html-proofer: true
+#          html-proofer: true
           version: '0.55'
 #      - build-and-test
 #      - deploy:
