@@ -7,7 +7,7 @@ orbs:
 jobs:
   build-and-test:
     executor:
-      name: hugo/default
+      name: default
     steps:
       - checkout
       - hugo/build
