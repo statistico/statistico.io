@@ -8,7 +8,7 @@
     </div>
     <div class="row">
       {{ range (.Site.GetPage "Section" "blog").Pages.ByDate }}
-      <a href="{{ .Permalink }}">
+      <a href="{{ .RelPermalink }}">
         <div class="four columns blog-card">
           <img src="{{ .Params.Image }}" class="blog-card-img" alt="{{ .Title }}">
           <h2>{{ .Title }}</h2>
