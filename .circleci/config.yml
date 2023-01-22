@@ -15,6 +15,10 @@ jobs:
           check-img-http: true
           error-sort: ':path'
           path: public
+      - run:
+          name: Check public contents
+          command: |
+            cd public && ls -la
       - persist_to_workspace:
           root: .
           paths:
