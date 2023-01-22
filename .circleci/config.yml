@@ -12,7 +12,7 @@ jobs:
       - hugo/hugo-build
       - hugo/html-proofer:
           check-favicon: true
-          check-img:http: true
+          check-img-http: true
           path: /public
       - persist_to_workspace:
           root: .
