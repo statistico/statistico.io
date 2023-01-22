@@ -10,6 +10,9 @@ jobs:
     steps:
       - checkout
       - hugo/hugo-build
+      - hugo/html-proofer:
+          check-favicon: true
+          check-img:http: true
       - persist_to_workspace:
           root: .
           paths:
