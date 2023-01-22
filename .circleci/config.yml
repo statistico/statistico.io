@@ -21,7 +21,8 @@ jobs:
             - public
 
   deploy:
-    executor: aws-cli/default
+    docker:
+      - image: 'cimg/python:3.10'
     steps:
       - attach_workspace:
           at: public
