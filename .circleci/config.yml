@@ -20,18 +20,18 @@ jobs:
           paths:
             - public
 
-#  deploy:
-#    executor: aws-cli/default
-#    steps:
-#      - attach_workspace:
-#          at: build
-#      - aws-cli/setup
-#      - aws-s3/sync:
-#          arguments: |
-#            --acl public-read \
-#            --cache-control "max-age=86400"
-#          from: build/*
-#          to: ${AWS_S3_BUCKET}
+  deploy:
+    executor: aws-cli/default
+    steps:
+      - attach_workspace:
+          at: public
+      - aws-cli/setup
+      - aws-s3/sync:
+          arguments: |
+            --acl public-read \
+            --cache-control "max-age=86400"
+          from: public/*
+          to: ${AWS_S3_BUCKET}
 #      - run:
 #          name: Invalidate CloudFront Cache
 #          command: |
@@ -41,10 +41,10 @@ workflows:
   build-test-deploy:
     jobs:
       - build-and-test
-#      - deploy:
-#          context: aws
-#          requires:
-#            - build-and-test
+      - deploy:
+          context: aws
+          requires:
+            - build-and-test
 #          filters:
 #            branches:
 #              only: master
