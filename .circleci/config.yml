@@ -27,12 +27,15 @@ jobs:
       - attach_workspace:
           at: public
       - aws-cli/setup
-      - aws-s3/sync:
-          from: public/*
-          to: ${AWS_S3_BUCKET}
-          arguments: |
-            --acl public-read \
-            --cache-control "max-age=86400"
+#      - aws-s3/sync:
+#          from: public/*
+#          to: ${AWS_S3_BUCKET}
+#          arguments: |
+#            --acl public-read \
+#            --cache-control "max-age=86400"
+      - run:
+          name: Deploy artifacts
+          command: aws s3 sync public/* s3://statistico.io --acl public-read
 #      - run:
 #          name: Invalidate CloudFront Cache
 #          command: |
