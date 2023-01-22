@@ -26,17 +26,12 @@ jobs:
       - attach_workspace:
           at: public
       - aws-cli/setup
-      - run:
-          name: Check contents and variables
-          command: |
-            cd public && ls -la
-            echo $AWS_S3_BUCKET
       - aws-s3/sync:
           arguments: |
             --acl public-read \
             --cache-control "max-age=86400"
           from: public
-          to: ${AWS_S3_BUCKET}
+          to: s3://statistico.io
 #      - run:
 #          name: Invalidate CloudFront Cache
 #          command: |
