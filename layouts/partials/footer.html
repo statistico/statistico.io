@@ -2,8 +2,8 @@
   <p>
     Copyright &copy; {{ now.Format "2006" }} {{ $.Site.Title }} | All rights reserved.
   </p>
-  {{ $main := resources.Get "js/main.js" }}
-  <script src="{{ $main.RelPermalink }}" integrity="{{ $main.Data.Integrity }}"></script>
   <script src="https://kit.fontawesome.com/84d27efd4b.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  {{ $mainJs := resources.Get "js/main.js" }}
+  <script src="{{ $mainJs.RelPermalink }}" integrity="{{ $mainJs.Data.Integrity }}"></script>
 </footer>
