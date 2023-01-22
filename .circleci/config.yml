@@ -27,11 +27,11 @@ jobs:
           at: public
       - aws-cli/setup
       - aws-s3/sync:
-          arguments: |
-            --acl public-read \
-#            --cache-control "max-age=86400"
           from: public/*
           to: ${AWS_S3_BUCKET}
+          arguments: |
+            --acl public-read \
+            --cache-control "max-age=86400"
 #      - run:
 #          name: Invalidate CloudFront Cache
 #          command: |
