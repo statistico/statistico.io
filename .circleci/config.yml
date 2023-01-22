@@ -27,8 +27,8 @@ jobs:
           at: public
       - aws-cli/setup
       - aws-s3/sync:
-#          arguments: |
-#            --acl public-read \
+          arguments: |
+            --acl public-read \
 #            --cache-control "max-age=86400"
           from: public/*
           to: ${AWS_S3_BUCKET}
