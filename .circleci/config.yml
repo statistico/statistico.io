@@ -13,6 +13,7 @@ jobs:
       - hugo/html-proofer:
           check-favicon: true
           check-img-http: true
+          error-sort: ':path'
           path: /public
       - persist_to_workspace:
           root: .
