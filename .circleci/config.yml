@@ -26,6 +26,11 @@ jobs:
       - attach_workspace:
           at: public
       - aws-cli/setup
+      - run:
+          name: Check contents and variables
+          command: |
+            cd public && ls -la
+            echo $AWS_S3_BUCKET
       - aws-s3/sync:
           arguments: |
             --acl public-read \
