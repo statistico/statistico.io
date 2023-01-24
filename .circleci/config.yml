@@ -28,7 +28,7 @@ jobs:
       - aws-cli/setup
       - run:
           name: Deploy artifacts
-          command: aws s3 sync public/* s3://statistico.io --acl public-read
+          command: aws s3 sync public/* ${AWS_S3_BUCKET} --acl public-read
 #      - run:
 #          name: Invalidate CloudFront Cache
 #          command: |
