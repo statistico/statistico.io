@@ -29,10 +29,10 @@ jobs:
       - run:
           name: Deploy artifacts
           command: aws s3 sync public/* ${AWS_S3_BUCKET} --acl public-read
-#      - run:
-#          name: Invalidate CloudFront Cache
-#          command: |
-#            aws cloudfront create-invalidation --distribution-id ${AWS_CLOUDFRONT_DISTRIBUTION} --paths "/*"
+      - run:
+          name: Invalidate CloudFront Cache
+          command: |
+            aws cloudfront create-invalidation --distribution-id ${AWS_CLOUDFRONT_DISTRIBUTION} --paths "/*"
 
 workflows:
   build-test-deploy:
