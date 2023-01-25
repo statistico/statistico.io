@@ -17,5 +17,53 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding: 14px 0;
+    padding: 20px 0;
 }
+
+#blog-post-content {
+    width: 100%;
+}
+
+#blog-post-img {
+    width: 100%;
+}
+
+#blog-post-content h2 {
+    margin: 20px 0 5px 0;
+    color: #72c0d9;
+}
+
+#blog-post-content p {
+    margin-bottom: 18px;
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    #blog-post h1 {
+        font-size: 32px;
+    }
+
+    #blog-post-content {
+        font-size: 18px;
+    }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    #blog-post h1 {
+        font-size: 34px;
+    }
+
+    #blog-post-content {
+        font-size: 20px;
+    }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

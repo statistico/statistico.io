@@ -44,7 +44,8 @@ a {
 footer {
     text-align: center;
     padding: 10px;
-    height: 30px;
+    height: 26px;
+    font-size: 14px;
 }
 
 /* Banner */

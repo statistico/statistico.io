@@ -1,6 +1,5 @@
 {{ define "main" }}
 <article id="blog-post">
-<!--  <img src="{{ .Params.Image }}" />-->
   <nav id="navigation">
     <div class="container">
       <a href="/"><i class="fa-solid fa-house"></i></a>
@@ -19,7 +18,8 @@
       </div>
     </div>
     <h1>{{ .Title }}</h1>
-    <div>
+      <img src="{{ .Params.Image }}" alt="{{ .Title }}" id="blog-post-img" />
+    <div id="blog-post-content">
       <p>{{ .Content }}</p>
     </div>
   </div>
