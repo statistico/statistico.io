@@ -11,6 +11,7 @@
 
 #blog-post h2 {
     color: #1EAEDB;
+    font-size: 24px;
 }
 
 #blog-post-meta {
@@ -61,9 +62,15 @@
     }
 
     #blog-post-content {
-        font-size: 20px;
+        font-size: 18px;
+        letter-spacing: -0.003em;
     }
 }
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    #blog-post-content {
+        font-size: 20px;
+        letter-spacing: -0.003em;
+    }
+}
