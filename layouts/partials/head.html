@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="{{ $main.RelPermalink }}" integrity="{{ $main.Data.Integrity }}">
   {{ $blog := resources.Get "css/blog.css" | minify | fingerprint "sha512" }}
   <link rel="stylesheet" href="{{ $blog.RelPermalink }}" integrity="{{ $blog.Data.Integrity }}">
+  {{ $works := resources.Get "css/works.css" | minify | fingerprint "sha512" }}
+  <link rel="stylesheet" href="{{ $works.RelPermalink }}" integrity="{{ $works.Data.Integrity }}">
   {{ $styles := resources.Get "css/styles.css" | minify | fingerprint "sha512" }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
 </head>

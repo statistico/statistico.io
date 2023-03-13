@@ -10,3 +10,7 @@ params:
     ball: '/img/statistico-logo-ball.png'
     textBlue: '/img/statistico-logo-text.png'
     textWhite: '/img/statistico-logo-text-white.png'
+  howItWorks:
+    exchangeMobile: '/img/exchange-mobile.png'
+    statisticoMobile: '/img/statistico-mobile.png'
+    statisticoTablet: '/img/statistico-tablet.png'
