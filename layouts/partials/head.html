@@ -18,4 +18,5 @@
   <link rel="stylesheet" href="{{ $works.RelPermalink }}" integrity="{{ $works.Data.Integrity }}">
   {{ $styles := resources.Get "css/styles.css" | minify | fingerprint "sha512" }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+  {{ template "_internal/google_analytics.html" . }}
 </head>

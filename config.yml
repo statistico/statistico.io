@@ -1,6 +1,7 @@
 baseURL: 'https://statistico.io/'
 languageCode: 'en-us'
 title: 'Statistico'
+googleAnalytics: 'G-12XDRNF6YQ'
 
 params:
   banner:
