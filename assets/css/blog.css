@@ -1,3 +1,8 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 #blog-post {
     text-align: left;
     min-height: calc(100vh - 50px);
@@ -11,7 +16,18 @@
 
 #blog-post h2 {
     color: #1EAEDB;
+    font-size: 26px;
+}
+
+#blog-post h3 {
+    color: #dedede;
     font-size: 24px;
+}
+
+#blog-post h4 {
+    color: #dedede;
+    font-size: 18px;
+    font-style: italic;
 }
 
 #blog-post-meta {

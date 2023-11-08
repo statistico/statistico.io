@@ -56,7 +56,7 @@ are converted into odds for specific football markets.
 
 With a long-standing awareness that not all sports trading markets are efficient, coupled with an understanding of the impact of problem gambling,
 the philosophical movement that is **Statistico** was born. Armed with newly developed technology-led superpowers and an inbuilt high 
-level of curiosity, additional applications and processes were developed to bring to Statistico to the market. At the point of writing 
+level of curiosity, additional applications and processes were developed to bring to Statistico the market. At the point of writing 
 the Statistico ecosystem consists of:
 
 - 7 applications
@@ -74,7 +74,7 @@ mathematical and probability theory content. You can also expect to read content
 We aim to spark intelligent and thought-provoking conversation around the topics of technology, statistical analysis and sports trading.
 
 ## Resources and Links
-1. [Statistico - Twitter](https://twitter.com/iamjoesweeny)
+1. [Statistico - Twitter](https://twitter.com/statistico_tech)
 2. [Joe Sweeny - Linkedin](https://www.linkedin.com/in/joe-sweeny/)
 3. [Statistico - GitHub](https://github.com/statistico)
 4. [Statistico Sportmonks Go Client](https://github.com/statistico/statistico-sportmonks-go-client)
