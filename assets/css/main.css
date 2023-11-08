@@ -46,6 +46,11 @@ ul {
     padding-left: 20px;
 }
 
+hr {
+    padding: 0;
+    margin: 10px 0;
+}
+
 footer {
     text-align: center;
     padding: 10px;
