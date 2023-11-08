@@ -1,6 +1,6 @@
 ---
 title: "Technology Overview"
-date: 2023-11-08T16:10:54Z
+date: 2023-11-08T14:10:54Z
 draft: false
 author: "Joe Sweeny"
 tags: ["Business", "Technology"]
@@ -26,7 +26,7 @@ is built upon. The high level concepts and key decision drivers were:
 
 - PHP was the server side language I had the most commercial experience in. 
 - I wanted to explore new languages. 
-- The languages chosen had to be performant and relevant i.e. by learning these languages it provided career growth opportunities. 
+- The languages chosen had to be high performing and relevant i.e. by learning these languages it provided career growth opportunities. 
 - I had extensive experience in RESTful API development. Should I look to explore another communication framework?
 
 ### Well Scoped Applications
