@@ -1,6 +1,6 @@
 ---
 title: "Technology Overview"
-date: 2023-11-08T16:10:54Z
+date: 2023-11-08T14:10:54Z
 draft: false
 author: "Joe Sweeny"
 tags: ["Business", "Technology"]
