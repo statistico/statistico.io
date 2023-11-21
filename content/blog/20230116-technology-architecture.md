@@ -151,7 +151,7 @@ are accessible to the public internet.
 **Private Subnet**: 2 x private subnets are deployed within the VPC, each within a different availability zone. Private subnets
 do not have publicly accessible IP addresses and can only be reached via the public facing load balancer. To preserve
 our security posture, application and database resources are deployed within the private subnets preventing direct
-and authenticated access from the outside world.
+and unauthenticated / unauthorised access from the outside world.
 
 **NAT Gateway**: A NAT gateway is deployed within each public subnet. A NAT Gateway is used a gateway to route traffic to the
 outside world but prevent ingress traffic from the outside world. The collection of statistics and placing trades from private subnet
